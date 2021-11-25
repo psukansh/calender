@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calender</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main">
+		<div class="content">
+			<table>
+				<tr>
+					<th>Monday</th>
+					<th>Tuesday</th>
+					<th>Wednesday</th>
+					<th>Thursday</th>
+					<th>Friday</th>
+					<th>Saturday</th>
+					<th>Sunday</th>
+				</tr>
+
+				<tr>
+					<td class="digit">1 <span>( 3 )</span> </td>
+					<td class="digit">2 <span>( 3 )</span> </td>
+					<td class="digit">3 <span>( 3 )</span> </td>
+					<td class="digit">4 <span>( 3 )</span> </td>
+					<td class="digit">5 <span>( 3 )</span> </td>
+					<td class="digit">6 <span>( 3 )</span> </td>
+					<td class="digit">7 <span>( 3 )</span> </td>
+				</tr>
+				<tr>
+					<td class="digit" id="eight" onclick="eight()">8</td>
+					<td class="digit">9</td>
+					<td class="digit">10</td>
+					<td class="digit">11</td>
+					<td class="digit">12</td>
+					<td class="digit">13</td>
+					<td class="digit">14</td>
+				</tr>
+				<tr>
+					<td class="digit">15</td>
+					<td class="digit">16</td>
+					<td class="digit">17</td>
+					<td class="digit">18</td>
+					<td class="digit">19</td>
+					<td class="digit">20</td>
+					<td class="digit">21</td>
+				</tr>
+				<tr>
+					<td class="digit">22</td>
+					<td class="digit">23</td>
+					<td class="digit">24</td>
+					<td class="digit">25</td>
+					<td class="digit">26</td>
+					<td class="digit">27</td>
+					<td class="digit">28</td>
+				</tr>
+				<tr>
+					<td class="digit" onclick="myFunction()">29</td>
+					<td class="digit" onclick="myFunction()">30</td>
+					<td class="digit" onclick="myFunction()">31</td>
+					<td class="digit" onclick="myFunction()"> </td>
+					<td class="digit" onclick="myFunction()"> </td>
+					<td class="digit" onclick="myFunction()"> </td>
+					<td class="digit" onclick="myFunction()"> </td>
+				</tr>
+			</table>
+
+		</div>
+	</div>
+	<script>
+
+		let digit = document.querySelectorAll(".digit");
+		let eight = document.getElementById("eight");
+
+		eight.innerHTMl = "9";
+
+
+		function myFunction() {
+			digit.style.color = "blue";
+
+		}
+
+		function eight() {
+			eight.style.color = "gray";
+		}
+	</script>
+
+
+</body>
+
+</html>
